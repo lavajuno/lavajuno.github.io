@@ -1,0 +1,182 @@
+/* Fonts */
+@font-face {
+    font-family: JetBrains Mono;
+    src: url(media/fonts/JetBrainsMono-Regular.woff2);
+}
+@font-face {
+    font-family: JetBrains Mono Bold;
+    src: url(media/fonts/JetBrainsMono-Bold.woff2);
+}
+@font-face {
+    font-family: JetBrains Mono Italic;
+    src: url(media/fonts/JetBrainsMono-Italic.woff2);
+}
+@font-face {
+    font-family: JetBrains Mono Bold Italic;
+    src: url(media/fonts/JetBrainsMono-BoldItalic.woff2);
+}
+
+/* Text styles */
+body {
+    font-family: "JetBrains Mono", Courier, monospace;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+}
+h1 {
+    margin: 0 0 8px 0;
+    padding: 0;
+    font-family: "Michroma", sans-serif;
+    font-size: 48px;
+}
+h2 {
+    margin: 4px 0;
+    padding: 0;
+    font-family: "Michroma", sans-serif;
+    font-size: 32px;
+}
+h3 {
+    font-family: "JetBrains Mono Italic", Courier, monospace;
+    margin: 16px 0;
+    padding: 0;
+    font-size: 24px;
+}
+h4 {
+    font-family: "JetBrains Mono Italic", Courier, monospace;
+    margin: 16px 0;
+    padding: 0;
+    font-size: 16px;
+}
+h5 {
+    font-family: "JetBrains Mono Italic", Courier, monospace;
+    margin: 16px 0;
+    padding: 0;
+    font-size: 12px;
+}
+p {
+    margin: 16px 0;
+    padding: 0;
+}
+a {
+    color: white;
+    text-decoration: underline;
+}
+.justify_right {
+    text-align: right;
+}
+
+/* Box highlighting */
+.box {
+    border: 1px solid white;
+    box-shadow: 3px 3px white;
+    padding: 4px;
+}
+.pattern {
+    background-image: url("media/images/pattern.png");
+    background-repeat: repeat;
+}
+
+/* Content formatting */
+.content_outer {
+    margin: 0 auto;
+    padding: 4px;
+    max-width: 1000px;
+    
+}
+.content_inner {
+    margin: 8px 16px;
+    padding: 0;
+}
+
+/* Inline side-by-side */
+.sbs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    width: 100%;
+    margin: 0;
+    padding: 4px 0px;
+    overflow: hidden;
+}
+.sbsl {
+    width: 95%;
+    margin: 0px 0px 6px 0px;
+    padding: 0px 8px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.sbsr {
+    width: 95%;
+    margin: 0px 0px 6px 0px;
+    padding: 0px 8px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+/* Inline menus and buttons */
+.inline_menu {
+    margin: 4px 0px;
+    padding: 4px 0px;
+    width: 100%;
+    overflow: auto;
+}
+.top_navbar {
+    margin: 24px auto 8px auto;
+    max-width: 1000px;
+}
+.inline_button {
+    padding: 4px 8px;
+    display: inline-block;
+    border: 1px solid white;
+    box-shadow: none;
+    
+}
+.inline_button:hover {
+    box-shadow: 3px 3px white;
+}
+.inline_spacer {
+    display: inline-block;
+    width: 20px;
+    height: auto;
+}
+
+/* Dividers and spacers */
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+.spacer {
+    width: 100%;
+    height: 1px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+/* In-line formatting */
+.horizontal_container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+.horizontal_item {
+    display: inline-block;
+}
+.centered_container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding: 4px;
+}
+
+/* Icons */
+.media_icon {
+    padding: 0;
+    margin: 4px 0;
+    display: inline-block;
+    height: 32px;
+    width: auto;
+}
