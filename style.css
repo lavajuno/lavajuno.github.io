@@ -71,7 +71,7 @@ a {
 
 /* Content formatting */
 .content_outer {
-    margin: 40 auto;
+    margin: 40px auto;
     padding: 4px;
     max-width: 1000px;
     background-color: rgb(20, 20, 30);
