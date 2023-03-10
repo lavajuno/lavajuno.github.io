@@ -92,19 +92,12 @@ a {
     padding: 4px 0px;
     overflow: hidden;
 }
-.sbsl {
-    width: 95%;
-    margin: 0px 0px 6px 0px;
+.sbsc {
+    width: 100%;
     padding: 0px 8px;
     word-wrap: break-word;
     overflow: hidden;
-}
-.sbsr {
-    width: 95%;
-    margin: 0px 0px 6px 0px;
-    padding: 0px 8px;
-    word-wrap: break-word;
-    overflow: hidden;
+    box-sizing: border-box;
 }
 
 /* Top-of-page */
@@ -117,6 +110,7 @@ a {
     z-index: 999;
     box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
 }
+
 .banner {
     background-image: url("media/images/banner.jpg");
     background-size: cover;
@@ -127,15 +121,17 @@ a {
 /* Buttons */
 .inline_button {
     margin: 0px 0px 0px 0px;
-    padding: 4px 8px;
+    padding: 6px 10px;
     display: inline-block;
-    border: 1px solid rgba(0,0,0,0);
-    transition: 0.3s;
+    transition: 0.25s;
 }
+
 .inline_button:hover {
-    padding: 4px 16px;
-    border: 1px solid white;
+    padding: 6px 14px;
+    background: white;
+    color: black;
 }
+
 .inline_spacer {
     display: inline-block;
     width: 20px;
