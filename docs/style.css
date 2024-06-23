@@ -190,7 +190,7 @@ a {
     box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
 }
 
-.navlink {
+.navbar a {
     display: inline-block;
     
     padding: 16px 24px;
@@ -206,12 +206,12 @@ a {
     border-bottom: 2px solid rgba(235, 245, 250, 0);
 }
 
-.navlink:hover {
+.navbar a:hover {
     background: rgb(235, 245, 250);
     color: rgb(20, 20, 22);
 }
 
-.navlink_active {
+.navbar a.active {
     border-bottom: 2px solid rgba(235, 245, 250, 0.75);
 }
 
