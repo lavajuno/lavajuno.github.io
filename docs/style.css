@@ -116,26 +116,21 @@ a {
     box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
 }
 
-.banner_sky {
+.banner.sky {
     background-image: url(media/sky.jpg);
 }
 
-.banner_purple {
+.banner.purple {
     background-size: 100% 100%;
     background-image: radial-gradient(49% 81% at 45% 47%, #EE931045 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #6925C7FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #3EA3D3FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #0F6EE8FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF8B53FF 0%, #FF0000FF 100%);
 }
 
-.banner_blue {
+.banner.blue {
     background-size: 100% 100%;
     background-image: radial-gradient(49% 81% at 45% 47%, #36EE1045 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #0C67CFFF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #25A1E8FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #084DFEFF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #43EF7CFF 0%, #FF0000FF 100%);
 }
 
-.banner_orange {
-    background-size: 100% 100%;
-    background-image: radial-gradient(49% 81% at 45% 47%, #EEC01045 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #CF3C0CFF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #B3941EFF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #EEA808FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #EFB943FF 0%, #FF0000FF 100%);
-}
-
-.banner_grey {
+.banner.grey {
     background-size: 100% 100%;
     background-image: radial-gradient(49% 81% at 45% 47%, #445C9145 0%, #FFFFFF00 100%),radial-gradient(113% 91% at 17% -2%, #3D446CFF 1%, #FFFFFF00 99%),radial-gradient(142% 91% at 83% 7%, #706990FF 1%, #FFFFFF00 99%),radial-gradient(142% 91% at -6% 74%, #606E79FF 1%, #FFFFFF00 99%),radial-gradient(142% 91% at 111% 84%, #7B8BA8FF 1%, #FFFFFFFF 100%);
 }
@@ -213,6 +208,32 @@ a {
 
 .navbar a.active {
     border-bottom: 2px solid rgba(235, 245, 250, 0.75);
+}
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        height: min-content;
+        overflow-y: hidden;
+    }
+
+    .navbar:hover {
+        height: fit-content;
+        max-height: 50vh;
+        overflow-y: scroll;
+    }
+
+    .navbar a {
+        display: none;
+        text-align: center;
+    }
+
+    .navbar:hover a {
+        display: block;
+    }
+
+    .navbar a.active {
+        display: block;
+    }
 }
 
 /* ----- Positioning ----- */
