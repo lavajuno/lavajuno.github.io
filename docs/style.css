@@ -51,7 +51,7 @@ body {
 body>aside {
     box-sizing: border-box;
     margin-top: 2rem;
-    padding: 0.5rem;
+    padding: 0 1rem;
     width: 10em;
 }
 
@@ -92,7 +92,7 @@ body>main {
     box-sizing: border-box;
     margin-top: 2rem;
     flex: 1;
-    padding: 0.5rem;
+    padding: 0 1rem;
     max-width: 50rem;
 }
 
