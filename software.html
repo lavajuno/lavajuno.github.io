@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software - Juno Meifert</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icons/css/solid.min.css">
+    <link rel="stylesheet" href="icons/css/fontawesome.min.css">
+    <script src="js/navbar.js"></script>
+</head>
+<body>
+    <nav>
+        <span class="expand_button" onclick="navbar_toggle()"><i class="fa-solid fa-bars"></i></span>
+        <a href="index.html">Home</a>
+        <a href="photos.html">Photos</a>
+        <a href="software.html" class="active">Software</a>
+        <a href="ham.html"></a>
+    </nav>
+
+    <div class="container">
+        <header class="banner purple">
+            <h1 class="">Software</h1>
+        </header>
+    </div>
+
+    <div class="container">
+        <main>
+            <div class="grid cols-3">
+                <div class="card noimg">
+                    <header>
+                        <h2>AFSKModem</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            An error-correcting AFSK digital radio protocol designed to
+                            enable digital data to be transmitted and received by
+                            analog-only radios with no external hardware besides a personal
+                            computer. 
+                        </p>
+                        <p>
+                            The initial implementation of afskmodem is in Python.
+                            I also implemented it in Java (linked below). Both versions are
+                            fully compatible with each other.
+                        </p>
+                        <p>
+                            <a href="https://lavajuno.github.io/jfskmodem">
+                                https://lavajuno.github.io/jfskmodem
+                            </a>
+                        </p>                    </div>
+                    <footer class="right">
+                        <a class="button" href="https://github.com/lavajuno/afskmodem">
+                            <i class="fa-solid fa-code-merge"></i> AFSKModem (Python)
+                        </a>
+                        <a class="button" href="https://github.com/lavajuno/jfskmodem">
+                            <i class="fa-solid fa-code-merge"></i> JFSKModem (Java)
+                        </a>
+                    </footer>
+                </div>
+
+                <div class="card noimg">
+                    <header>
+                        <h2>LucidJSON</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            A small, easy-to-use JSON serialization/deserialization library
+                            for Java with a LL(1) parser backend.
+                        </p>
+                    </div>
+                    <footer class="right">
+                        <a class="button" href="https://github.com/lavajuno/lucidjson">
+                            <i class="fa-solid fa-code-merge"></i> Repository
+                        </a>
+                    </footer>
+                </div>
+
+                <div class="card noimg">
+                    <header>
+                        <h2>MirrorLog</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            A customizable cross-platform log server designed for use by
+                            Clarkson University's open source mirror.
+                        </p>                    </div>
+                    <footer class="right">
+                        <a class="button" href="https://github.com/lavajuno/mirrorlog">
+                            <i class="fa-solid fa-code-merge"></i> Repository
+                        </a>
+                    </footer>
+                </div>
+            </div>
+            <hr>
+        </main>
+    </div>
+
+    <div class="container">
+        <footer>
+            <div class="card noimg">
+                <ul>
+                    <li><a href="https://www.lavajuno.org">Website</a></li>
+                    <li><a href="https://github.com/lavajuno">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/jmeifert/">LinkedIn</a></li>
+                </ul>
+                <section class="copyright">
+                    <h4>&copy; 2025 Juno Meifert</h4>
+                    <p>
+                        Last modified April 2025
+                    </p> 
+                </section>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
